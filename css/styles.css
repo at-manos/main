@@ -1,0 +1,58 @@
+/* Reset default styles */
+* {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0px auto;
+  line-height: 1.8;
+}
+
+/* Container styling for layout */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.x-axis path,
+.y-axis path,
+.x-axis line,
+.y-axis line {
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+
+.x-axis text,
+.y-axis text {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.controls {
+  width: 50%;
+  display: flex;
+  align-content: center;
+}
+
+#vis {
+  display: flex;
+}
+
+#tooltip {
+  display: show;
+}
