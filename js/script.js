@@ -569,7 +569,7 @@ async function createWeatherMap() {
 
   const legendAxis = d3
     .axisBottom(legendXScale)
-    .ticks(3)
+    .ticks(3) 
     .tickFormat((d) => `${d.toFixed(1)}°F`);
   legendSvg
     .append("rect")
