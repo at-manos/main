@@ -16,6 +16,29 @@
 
     <div id="vis"></div>
     <div id="tooltip"></div>
+    <h1>Write-up</h1>
+    <p>This is a visualization of the Dail Weather in the U.S., for the year of 2017. It was provided by the NOAA Daily
+      Global Historical Climatology Network. For the visualization, I chose the variables: temperature
+      (min,max,average), data points and weather stations (to visualize the sample size), and total snow. I thought that
+      this covered most of the data that users would like to see, seeing as the other variables are much more complex.
+    </p>
+    <p>I implemented several interactions in this visualization. The first thing you will see is the query filtering
+      sliders. This allows you to set a minimum on any combination of datapoints that I have chosen. This means that you
+      can view states that have >50 data points and >50F temperature. Any combination will work to dynamically filter
+      the visualization down. I also implemented a hover, so that you can see the data for that state on its own. Inside
+      that hover, you can see more datapoints that were not included in the filter, such as wind speed. It will show,
+      with the appropriate color, a scale from the minimum temperature to the maximum, so that you can get a sense of
+      how hot it is generally, and how much it varies.</p>
+    <p>My development process consisted of exploring the D3 website until I found a demo that was close to the idea that
+      I had in my head (https://observablehq.com/@d3/non-contiguous-cartogram). After I found this, I went ahead an
+      copied my lab 4-5 project. I replaced the javascript with the code from the D3 demo, and I got to work trying to
+      use the weather data instead of the obesity data that was used in the demo. To do this, I used AI to figure out
+      how it links together, and map both the datasets of the states and the weather by using the FIPS code. In man
+      hours, this project took me probably about 5 or 6 hours in total. The most time was spent first on finding
+      something to build off of, and then finding my feet getting it to work with the weather database. Making it look
+      nice, with the CSS and the other aspects was also difficult, although I did use AI to make it easier on myself, as
+      I struggle with the intracacies of the library and filtering the data using javascript, which I don't have much
+      experience for.</p>
     <!--  Will hold our visualization (SVG) -->
     <!--  Will hold our visualization (SVG) -->
   </div>

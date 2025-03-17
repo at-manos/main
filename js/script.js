@@ -520,7 +520,7 @@ async function createWeatherMap() {
     d3.select("#stateCount").text(filteredStates.size);
   }
 
-  const legendWidth = 250;
+  const legendWidth = 260;
   const legendHeight = 50;
   updateMap(new Set(Object.values(fipsToState)));
 
@@ -569,7 +569,7 @@ async function createWeatherMap() {
 
   const legendAxis = d3
     .axisBottom(legendXScale)
-    .ticks(6)
+    .ticks(3)
     .tickFormat((d) => `${d.toFixed(1)}°F`);
   legendSvg
     .append("rect")
